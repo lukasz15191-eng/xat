@@ -136,3 +136,7 @@ body{
   text-align:center !important;
   padding-left:0 !important;
 }
+/* Korekta tekstu opisu bliżej avatara */
+.about{
+  margin-left:115px !important;
+}
