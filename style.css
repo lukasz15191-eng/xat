@@ -118,3 +118,30 @@ body{
   width:130px;
   height:130px;
 }
+/* Nick + treści bliżej avatara */
+.title, .subtitle, .about, .music, .section-title, .friends, .gallery {
+  padding-left:170px; /* było 200px */
+}
+
+/* Tekst opisu wyrównany ładniej */
+.about {
+  margin-right:60px;
+}
+
+/* Ustalenie wysokości avatara vs tytułu */
+.title {
+  margin-top:145px; /* 5px wyżej niż było */
+}
+
+/* Mniejsze odstępy między sekcjami */
+.section-title {
+  margin-top:12px;
+}
+
+/* Best Friends i Gallery bliżej siebie */
+.friends {
+  margin-bottom:10px;
+}
+.gallery {
+  margin-top:0;
+}
