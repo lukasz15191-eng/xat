@@ -5,8 +5,9 @@ body{
   color:#ffe9fb;
 }
 
+/* KARTA */
 .profile-box{
-  width:700px;
+  width:600px; /* dopasowane pod xat.me */
   max-width:95%;
   margin:70px auto;
   background:#0c0a18;
@@ -14,7 +15,6 @@ body{
   padding:100px 20px 20px;
   box-shadow:0 0 26px rgba(255,47,141,.4);
   position:relative;
-  text-align:center;
 }
 
 /* BANER W KARCIE */
@@ -33,7 +33,7 @@ body{
   z-index:1;
 }
 
-/* AVATAR KWADRATOWY */
+/* AVATAR — PO LEWEJ ✅ */
 .avatar{
   width:140px;
   height:140px;
@@ -42,31 +42,45 @@ body{
   border:4px solid #ff2f8d;
   box-shadow:0 0 18px #ff2f8d;
   position:absolute;
-  top:170px; /* delikatne nachodzenie */
-  left:50%;
-  transform:translateX(-50%);
+  top:150px;  /* nachodzenie na baner */
+  left:30px;  /* po lewej */
+  transform:none;
   z-index:5;
 }
 
-/* Tytuł */
+/* TEKST PRAWO OD AVATARA ✅ */
+.title,
+.subtitle,
+.about,
+.music,
+.section-title,
+.friends,
+.gallery{
+  text-align:left;
+  padding-left:200px; /* przestrzeń na avatar */
+}
+
+/* tytuł równo z górą avatara ✅ */
 .title{
   font-size:32px;
-  margin-top:95px;
-  margin-bottom:4px;
+  margin-top:150px;
+  margin-bottom:6px;
   font-weight:700;
 }
 .heart{
   color:#ff2b4f;
   text-shadow:0 0 12px #ff2b4f;
 }
+
 .subtitle{
   font-size:14px;
   opacity:.8;
   margin-bottom:20px;
 }
+
 .about{
   color:#fff;
-  margin:0 20px 20px;
+  margin:0 0 22px 200px;
   line-height:1.5;
 }
 
@@ -84,14 +98,13 @@ body{
   margin:22px 0 10px;
 }
 
-/* FRIENDS & GALLERY PO LEWEJ */
+/* Przy avatarze po lewej — wyrównanie zdjęć też po lewej */
 .friends,
 .gallery{
-  text-align:left;
-  padding-left:20px;
   margin-bottom:20px;
 }
-.friend{
+.friend,
+.gallery img{
   width:90px;
   height:90px;
   border-radius:20px;
@@ -101,14 +114,7 @@ body{
   object-fit:cover;
   box-shadow:0 0 14px rgba(154,96,255,.45);
 }
-
-/* Galeria – większe zdjęcia */
 .gallery img{
   width:130px;
   height:130px;
-  border-radius:20px;
-  margin:6px;
-  object-fit:cover;
-  background:#120e1f;
-  box-shadow:0 0 14px rgba(154,96,255,.45);
 }
