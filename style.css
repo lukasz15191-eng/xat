@@ -33,7 +33,7 @@ body{
   z-index:1;
 }
 
-/* AVATAR — PO LEWEJ, BEZ ZMIANY ROZMIARU */
+/* AVATAR — PO LEWEJ, BEZ ZMIANY ROZMIARU (bazowy) */
 .avatar{
   width:140px;
   height:140px;
@@ -122,15 +122,20 @@ body{
   background:#120e1f;
   box-shadow:0 0 14px rgba(154,96,255,.45);
 }
+
 /* === HARD OVERRIDES (działają na pewno) === */
 .profile-box{ width:600px !important; }
 
+/* AVATAR = ROZMIAR JAK FRIENDS (80x80) */
 .avatar{
   left:30px !important;
   top:150px !important;
   transform:none !important;
+  width:80px !important;
+  height:80px !important;
 }
 
+/* Teksty obok avatara */
 .title,
 .subtitle,
 .about,
@@ -151,14 +156,12 @@ body{
   line-height:1.55 !important;
 }
 
-/* mniejsze kafelki */
+/* FRIENDS mniejsze (80x80 – żeby było spójnie) */
 .friends .friend{ width:80px !important; height:80px !important; }
 
-.gallery img{
-  width:110px !important;
-  height:110px !important;
-  border-radius:18px !important;
-}
+/* 🔥 USUŃ GALERIĘ (tytuł + kafelki) bez ruszania HTML */
+.gallery{ display:none !important; }
+.section-title:last-of-type{ display:none !important; }
 
 /* sekcje niżej i ciaśniej */
 .section-title{ margin:14px 0 8px !important; }
