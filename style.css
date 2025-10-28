@@ -33,7 +33,7 @@ body{
   z-index:1;
 }
 
-/* ✅ AVATAR — po lewej, 140x140 */
+/* ✅ AVATAR — po lewej, 120x120 */
 .avatar{
   width:120px !important;
   height:120px !important;
@@ -80,7 +80,7 @@ body{
 
 /* OPIS */
 .about{
-  margin:0 60px 22px 150px !important;
+  margin:0 60px 22px 125px !important;
   line-height:1.5;
 }
 
