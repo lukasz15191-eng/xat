@@ -109,3 +109,16 @@ body{
 .section-title:last-of-type{
   display:none !important;
 }
+/* ⭐ Perfekcyjne wyśrodkowanie tekstu przy avatarze */
+.title{
+  padding-left:140px !important;
+}
+
+.subtitle{
+  padding-left:140px !important;
+}
+
+.about{
+  padding-left:140px !important;
+  margin-top:8px !important; /* minimalnie w dół */
+}
