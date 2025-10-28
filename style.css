@@ -122,3 +122,45 @@ body{
   background:#120e1f;
   box-shadow:0 0 14px rgba(154,96,255,.45);
 }
+/* === HARD OVERRIDES (działają na pewno) === */
+.profile-box{ width:600px !important; }
+
+.avatar{
+  left:30px !important;
+  top:150px !important;
+  transform:none !important;
+}
+
+.title,
+.subtitle,
+.about,
+.music,
+.section-title,
+.friends,
+.gallery{
+  text-align:left !important;
+  padding-left:160px !important; /* bliżej avatara */
+}
+
+.title{
+  margin-top:150px !important;   /* równo z górą avatara */
+}
+
+.about{
+  margin:0 60px 18px 160px !important; /* więcej luzu z prawej */
+  line-height:1.55 !important;
+}
+
+/* mniejsze kafelki */
+.friends .friend{ width:80px !important; height:80px !important; }
+
+.gallery img{
+  width:110px !important;
+  height:110px !important;
+  border-radius:18px !important;
+}
+
+/* sekcje niżej i ciaśniej */
+.section-title{ margin:14px 0 8px !important; }
+.friends{ margin-bottom:10px !important; }
+.gallery{ margin-top:0 !important; }
