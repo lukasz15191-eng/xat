@@ -5,9 +5,9 @@ body{
   color:#ffe9fb;
 }
 
-/* KARTA */
+/* KARTA (węższa pod xat.me) */
 .profile-box{
-  width:600px; /* dopasowane pod xat.me */
+  width:600px;
   max-width:95%;
   margin:70px auto;
   background:#0c0a18;
@@ -33,7 +33,7 @@ body{
   z-index:1;
 }
 
-/* AVATAR — PO LEWEJ ✅ */
+/* AVATAR — PO LEWEJ, BEZ ZMIANY ROZMIARU */
 .avatar{
   width:140px;
   height:140px;
@@ -42,13 +42,13 @@ body{
   border:4px solid #ff2f8d;
   box-shadow:0 0 18px #ff2f8d;
   position:absolute;
-  top:150px;  /* nachodzenie na baner */
-  left:30px;  /* po lewej */
+  top:150px;   /* delikatne nachodzenie */
+  left:30px;   /* lewa krawędź */
   transform:none;
   z-index:5;
 }
 
-/* TEKST PRAWO OD AVATARA ✅ */
+/* TEKST OBOK AVATARA (bliżej, nie za daleko w prawo) */
 .title,
 .subtitle,
 .about,
@@ -57,13 +57,13 @@ body{
 .friends,
 .gallery{
   text-align:left;
-  padding-left:200px; /* przestrzeń na avatar */
+  padding-left:170px; /* BYŁO 200px */
 }
 
-/* tytuł równo z górą avatara ✅ */
+/* Tytuł równy z górą avatara */
 .title{
   font-size:32px;
-  margin-top:150px;
+  margin-top:150px;  /* równo z top avatara */
   margin-bottom:6px;
   font-weight:700;
 }
@@ -75,12 +75,12 @@ body{
 .subtitle{
   font-size:14px;
   opacity:.8;
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
+/* Opis nie przyklejony do prawej */
 .about{
-  color:#fff;
-  margin:0 0 22px 200px;
+  margin:0 60px 20px 170px; /* dodałem margines po prawej */
   line-height:1.5;
 }
 
@@ -90,21 +90,20 @@ body{
   border-radius:14px;
   height:55px;
   line-height:55px;
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
 /* SEKCJE */
 .section-title{
-  margin:22px 0 10px;
+  margin:12px 0 8px; /* ciaśniej */
 }
 
-/* Przy avatarze po lewej — wyrównanie zdjęć też po lewej */
+/* FRIENDS & GALLERY */
 .friends,
 .gallery{
-  margin-bottom:20px;
+  margin-bottom:16px;
 }
-.friend,
-.gallery img{
+.friend{
   width:90px;
   height:90px;
   border-radius:20px;
@@ -117,31 +116,9 @@ body{
 .gallery img{
   width:130px;
   height:130px;
-}
-/* Nick + treści bliżej avatara */
-.title, .subtitle, .about, .music, .section-title, .friends, .gallery {
-  padding-left:170px; /* było 200px */
-}
-
-/* Tekst opisu wyrównany ładniej */
-.about {
-  margin-right:60px;
-}
-
-/* Ustalenie wysokości avatara vs tytułu */
-.title {
-  margin-top:145px; /* 5px wyżej niż było */
-}
-
-/* Mniejsze odstępy między sekcjami */
-.section-title {
-  margin-top:12px;
-}
-
-/* Best Friends i Gallery bliżej siebie */
-.friends {
-  margin-bottom:10px;
-}
-.gallery {
-  margin-top:0;
+  border-radius:20px;
+  margin:6px;
+  object-fit:cover;
+  background:#120e1f;
+  box-shadow:0 0 14px rgba(154,96,255,.45);
 }
