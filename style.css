@@ -5,9 +5,9 @@ body{
   color:#ffe9fb;
 }
 
-/* KARTA (węższa pod xat.me) */
+/* KARTA dopasowana pod xat.me */
 .profile-box{
-  width:400px;
+  width:600px;
   max-width:95%;
   margin:70px auto;
   background:#0c0a18;
@@ -17,7 +17,7 @@ body{
   position:relative;
 }
 
-/* BANER W KARCIE */
+/* BANER */
 .banner{
   width:100%;
   height:240px;
@@ -33,7 +33,7 @@ body{
   z-index:1;
 }
 
-/* AVATAR — PO LEWEJ, BEZ ZMIANY ROZMIARU (bazowy) */
+/* ✅ AVATAR — po lewej, 160x160 */
 .avatar{
   width:160px !important;
   height:160px !important;
@@ -42,28 +42,27 @@ body{
   border:4px solid #ff2f8d;
   box-shadow:0 0 18px #ff2f8d;
   position:absolute;
-  top:170px !important;
-  left:30px;
-  transform:none;
-  z-index:5;
+  top:160px !important;
+  left:30px !important;
+  transform:none !important;
+  z-index:5 !important;
 }
 
-/* TEKST OBOK AVATARA (bliżej, nie za daleko w prawo) */
+/* Tekst obok avatara */
 .title,
 .subtitle,
 .about,
 .music,
 .section-title,
-.friends,
-.gallery{
-  text-align:left;
-  padding-left:170px; /* BYŁO 200px */
+.friends{
+  text-align:left !important;
+  padding-left:180px !important;
 }
 
-/* Tytuł równy z górą avatara */
+/* Tytuł przy avatara */
 .title{
-  font-size:32px;
-  margin-top:150px;  /* równo z top avatara */
+  font-size:30px;
+  margin-top:160px !important;
   margin-bottom:6px;
   font-weight:700;
 }
@@ -72,15 +71,16 @@ body{
   text-shadow:0 0 12px #ff2b4f;
 }
 
+/* Podtytuł */
 .subtitle{
   font-size:14px;
   opacity:.8;
   margin-bottom:18px;
 }
 
-/* Opis nie przyklejony do prawej */
+/* OPIS */
 .about{
-  margin:0 60px 20px 170px; /* dodałem margines po prawej */
+  margin:0 60px 22px 180px !important;
   line-height:1.5;
 }
 
@@ -95,13 +95,13 @@ body{
 
 /* SEKCJE */
 .section-title{
-  margin:12px 0 8px; /* ciaśniej */
+  margin:16px 0 10px;
+  padding-left:180px;
 }
 
-/* FRIENDS & GALLERY */
-.friends,
-.gallery{
-  margin-bottom:16px;
+/* FRIENDS — rozmiar własny */
+.friends{
+  margin-bottom:20px;
 }
 .friend{
   width:90px;
@@ -113,57 +113,9 @@ body{
   object-fit:cover;
   box-shadow:0 0 14px rgba(154,96,255,.45);
 }
-.gallery img{
-  width:130px;
-  height:130px;
-  border-radius:20px;
-  margin:6px;
-  object-fit:cover;
-  background:#120e1f;
-  box-shadow:0 0 14px rgba(154,96,255,.45);
+
+/* USUWAMY GALERIĘ CAŁKOWICIE */
+.gallery,
+.section-title:last-of-type{
+  display:none !important;
 }
-
-/* === HARD OVERRIDES (działają na pewno) === */
-.profile-box{ width:600px !important; }
-
-/* AVATAR = ROZMIAR JAK FRIENDS (80x80) */
-.avatar{
-  left:30px !important;
-  top:150px !important;
-  transform:none !important;
-  width:80px !important;
-  height:80px !important;
-}
-
-/* Teksty obok avatara */
-.title,
-.subtitle,
-.about,
-.music,
-.section-title,
-.friends,
-.gallery{
-  text-align:left !important;
-  padding-left:160px !important; /* bliżej avatara */
-}
-
-.title{
-  margin-top:150px !important;   /* równo z górą avatara */
-}
-
-.about{
-  margin:0 60px 18px 160px !important; /* więcej luzu z prawej */
-  line-height:1.55 !important;
-}
-
-/* FRIENDS mniejsze (80x80 – żeby było spójnie) */
-.friends .friend{ width:80px !important; height:80px !important; }
-
-/* 🔥 USUŃ GALERIĘ (tytuł + kafelki) bez ruszania HTML */
-.gallery{ display:none !important; }
-.section-title:last-of-type{ display:none !important; }
-
-/* sekcje niżej i ciaśniej */
-.section-title{ margin:14px 0 8px !important; }
-.friends{ margin-bottom:10px !important; }
-.gallery{ margin-top:0 !important; }
