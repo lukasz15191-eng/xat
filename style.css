@@ -35,15 +35,15 @@ body{
 
 /* AVATAR — PO LEWEJ, BEZ ZMIANY ROZMIARU (bazowy) */
 .avatar{
-  width:160px;
-  height:160px;
+  width:160px !important;
+  height:160px !important;
   border-radius:20px;
   object-fit:cover;
   border:4px solid #ff2f8d;
   box-shadow:0 0 18px #ff2f8d;
   position:absolute;
-  top:170px;   /* delikatne nachodzenie */
-  left:30px;   /* lewa krawędź */
+  top:170px !important;
+  left:30px;
   transform:none;
   z-index:5;
 }
