@@ -35,8 +35,8 @@ body{
 
 /* ✅ AVATAR — po lewej, 140x140 */
 .avatar{
-  width:140px !important;
-  height:140px !important;
+  width:120px !important;
+  height:120px !important;
   border-radius:20px;
   object-fit:cover;
   border:4px solid #ff2f8d;
