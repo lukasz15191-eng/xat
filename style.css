@@ -1,0 +1,114 @@
+body{
+  margin:0;
+  background:#05040a;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#ffe9fb;
+}
+
+.profile-box{
+  width:700px;
+  max-width:95%;
+  margin:70px auto;
+  background:#0c0a18;
+  border-radius:22px;
+  padding:100px 20px 20px;
+  box-shadow:0 0 26px rgba(255,47,141,.4);
+  position:relative;
+  text-align:center;
+}
+
+/* BANER W KARCIE */
+.banner{
+  width:100%;
+  height:240px;
+  border-radius:22px;
+  position:absolute;
+  top:0;
+  left:0;
+  background:
+    radial-gradient(circle at 60% 10%, rgba(255,47,141,.36), transparent 60%),
+    radial-gradient(circle at 20% 70%, rgba(154,96,255,.36), transparent 65%),
+    linear-gradient(#1b1034, #0b0a17);
+  box-shadow:0 0 25px rgba(255,47,141,.5);
+  z-index:1;
+}
+
+/* AVATAR KWADRATOWY */
+.avatar{
+  width:140px;
+  height:140px;
+  border-radius:20px;
+  object-fit:cover;
+  border:4px solid #ff2f8d;
+  box-shadow:0 0 18px #ff2f8d;
+  position:absolute;
+  top:170px; /* delikatne nachodzenie */
+  left:50%;
+  transform:translateX(-50%);
+  z-index:5;
+}
+
+/* Tytuł */
+.title{
+  font-size:32px;
+  margin-top:95px;
+  margin-bottom:4px;
+  font-weight:700;
+}
+.heart{
+  color:#ff2b4f;
+  text-shadow:0 0 12px #ff2b4f;
+}
+.subtitle{
+  font-size:14px;
+  opacity:.8;
+  margin-bottom:20px;
+}
+.about{
+  color:#fff;
+  margin:0 20px 20px;
+  line-height:1.5;
+}
+
+/* MUZYKA */
+.music{
+  background:#1d0c29;
+  border-radius:14px;
+  height:55px;
+  line-height:55px;
+  margin-bottom:20px;
+}
+
+/* SEKCJE */
+.section-title{
+  margin:22px 0 10px;
+}
+
+/* FRIENDS & GALLERY PO LEWEJ */
+.friends,
+.gallery{
+  text-align:left;
+  padding-left:20px;
+  margin-bottom:20px;
+}
+.friend{
+  width:90px;
+  height:90px;
+  border-radius:20px;
+  background:#120e1f;
+  display:inline-block;
+  margin:6px;
+  object-fit:cover;
+  box-shadow:0 0 14px rgba(154,96,255,.45);
+}
+
+/* Galeria – większe zdjęcia */
+.gallery img{
+  width:130px;
+  height:130px;
+  border-radius:20px;
+  margin:6px;
+  object-fit:cover;
+  background:#120e1f;
+  box-shadow:0 0 14px rgba(154,96,255,.45);
+}
