@@ -119,3 +119,20 @@ body{
 .section-title:last-of-type{
   display:none !important;
 }
+/* ✅ Korekta położenia TUSIA♡ */
+.title{
+  padding-left:135px !important;
+}
+
+/* ✅ Wyśrodkowanie Best Friends */
+.section-title,
+.friends{
+  text-align:center !important;
+  padding-left:0 !important;
+}
+
+/* ✅ Wyśrodkowanie paska muzyki */
+.music{
+  text-align:center !important;
+  padding-left:0 !important;
+}
