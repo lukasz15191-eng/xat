@@ -122,3 +122,7 @@ body{
   padding-left:140px !important;
   margin-top:8px !important; /* minimalnie w dół */
 }
+/* 🔥 Przesunięcie samego opisu bardziej w lewo */
+.about{
+  padding-left:70px !important;
+}
